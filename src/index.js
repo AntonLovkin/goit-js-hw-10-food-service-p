@@ -1,13 +1,15 @@
 
-// import './styles.css';
-import cards from './menu.json'
-import cardsTpl from './cards.hbs'
 
-const cardContainer = document.querySelector(".js-menu"); 
+// import './styles.css';
+import cards from './menu.json';
+import cardsTpl from './cards.hbs';
+
+const cardContainer = document.querySelector('.js-menu'); 
 const chekboxStatus = document.querySelector('.theme-switch__toggle');
 const bodyRef = document.querySelector('body');
 
 const cardsMurkup = createCardMurcup(cards);
+console.log(cardsMurkup);
 cardContainer.insertAdjacentHTML('beforeend', cardsMurkup);
 
 function createCardMurcup(cards) {
